@@ -1,0 +1,13 @@
+{% layout 'layouts/page.html' %}
+
+{% block content %}
+<section id="blog-post-content-section" class="section-content-light-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-xs-12 block-center">
+          {% include "partials/blog-post-item.html", isCard: false %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

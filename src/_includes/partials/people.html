@@ -1,0 +1,17 @@
+{% assign peopleSorted = people.items | sortBy: 'name', 'status', filterByStatus %}
+{%- for card in peopleSorted %}
+<div class="person" {% if withRoles %}data-role-container="{{ card.invenio-role }}"{% endif %}>
+  <div class="photo">
+    {% if card.photo.size > 0 %}
+      <img src="/assets/images/people/{{ card.photo }}" />
+      {% else %}
+      {% assign initial = card.name | slice: 1 | upcase %}
+      <div class="initial">{{ initial }}</div>
+    {% endif %}
+  </div>
+  <div class="name">{{ card.name }}</div>
+  <div class="institution">{{ card.institution }}</div>
+  <div class="role">{{ card.role | join: ", " }}</div>
+  <div class="bio">{{ card.bio }}</div>
+</div>
+{%- endfor %}
