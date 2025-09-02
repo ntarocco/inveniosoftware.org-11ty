@@ -1,12 +1,12 @@
 ---
-title: Blog
+title: Invenio Blog
 subtitle: 'Follow news and updates on Invenio world'
 eleventyNavigation:
   key: Blog
   order: 6
 pagination:
   data: collections.posts
-  size: 2
+  size: 9
   alias: posts
   reverse: true
 permalink: 'blog{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber | plus: 1 }}{% endif %}/index.html'
@@ -18,17 +18,27 @@ paginationNextText: 'Older posts'
 {% block content %}
 <section class="section-content-light-bg">
   <div class="container">
-    <!--
+    {% if pagination.pageNumber == 0 %}
     <div class="row">
       <div class="col-md-12 col-xs-12 block-center">
-        FIRST@!!!!!
+        {% assign firstpost = posts[0] %}
+        {% assign title = firstpost.data.title %}
+        {% assign author = firstpost.data.author %}
+        {% assign date = firstpost.data.date %}
+        {% assign team_colour = firstpost.data.team_colour %}
+        {% assign team_url = firstpost.data.team_url %}
+        {% assign team = firstpost.data.team %}
+        {% assign content = firstpost.content %}
+        {% assign permalink = firstpost.data.permalink %}
+        {% include "partials/blog-post-top.html" %}
       </div>
     </div>
-  -->
+    {% endif %}
     <div class="row">
       <div class="col-md-12 col-xs-12 block-center">
         <div class="blog-post-list">
           {% for post in posts %}
+            {% if pagination.pageNumber > 0 or forloop.index > 1 %}
             <div class="blog-list-item col-xs-12 col-md-4">
               {% assign title = post.data.title %}
               {% assign author = post.data.author %}
@@ -40,6 +50,7 @@ paginationNextText: 'Older posts'
               {% assign permalink = post.data.permalink %}
               {% include "partials/blog-post-item.html", isCard: true %}
             </div>
+            {% endif %}
           {% endfor %}
         </div>
       </div>

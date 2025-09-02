@@ -34,6 +34,13 @@ export default async function (eleventyConfig) {
     }
     return result.sort((a, b) => a[field].localeCompare(b[field]));
   });
+
+  eleventyConfig.addFilter("dateFormat", (date) => {
+    const d = new Date(date);
+    const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                   "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    return `${months[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
+  });
 }
 
 export const config = {

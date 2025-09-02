@@ -2,23 +2,23 @@
 title: "Sprint: JSONB, bugs & bouncing search"
 author: Lars Holm Nielsen
 date: 2017-10-20
+team: Invenio Framework
+team_colour: invenio-team
+team_url: /product-framework
 permalink: "/blog/2017-10-20-invenio-sprint/"
 ---
 
 This sprint was focused on:
-
 - Metadata bundle: Finalize Invenio-Records, Invenio-Search, Invenio-JSONSchemas.
 - Fixing new bugs in Base/Auth bundles.
 
 As a result of 40 developer days, 37 commits and 2.8k lines touched (2k additions and 0.8k deletions), the following improvements were implemented:
-
 - Fixed bouncing of search results (sorting of the same query could change depending on which Elasticsearch node your query would be answered by).
 - JSONB now being used for record storage (Thanks to Javier for the PR).
 - Rendering of JSONSchemas, meaning `allOf` and `$refs` can now be resolved on-the-fly to generate an self-contained schema for e.g. deposit forms (Thanks to Pamfilos for the PR).
 - Boring fixes that makes sure the Base and Auth bundles are stable.
 
 ## List of changes:
-
 - Invenio-Records (v1.0.0b4):
   - Beta release (release checklist).
   - Changed data storage from JSON to JSONB (requires data migration and PostgreSQL v9.4+) Thanks to Javier for PR.

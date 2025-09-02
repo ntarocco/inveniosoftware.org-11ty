@@ -2,11 +2,13 @@
 title: "Sprint: Security and annoying warnings"
 author: Lars Holm Nielsen
 date: 2017-08-11
+team: Invenio Framework
+team_colour: invenio-team
+team_url: /product-framework
 permalink: "/blog/2017-08-11-invenio-sprint/"
 ---
 
 This sprint was focused on:
-
 - Data model issues (in Invenio-Access and Invenio-OAIServer).
 - Security issues (permanent sessions, "remember me", content security policy).
 - Working demo site (remove annoying warnings, fixed docs, SSL problems, bugs, admin interfaces, ...).
@@ -14,7 +16,6 @@ This sprint was focused on:
 As a result of 89 developer days, 126 commits and 6.6k lines touched (4.7k additions and 1.8k deletions) `auth bundle` has been stabilized and released in beta version (Accounts, Access, Profiles, OAuthClient and OAuth2Server).
 
 ## List of changes:
-
 - DoJSON (v1.3.2):
   - Remove `'Undo' is experimental` warning
 - Flask-Menu (v0.6.0):
@@ -84,10 +85,10 @@ As a result of 89 developer days, 126 commits and 6.6k lines touched (4.7k addit
 - Invenio-Cache (v1.0.0b1):
   - New module which provided Redis/Memcahed caching support.
 
+
 ## What's next?
 
 Next Invenio Sprint will focus on:
-
 - Metadata bundle:
   - JSONSchemas, PIDStore, Records, Indexer, Records-UI, Search, OAIServer, Records-REST
 - General documentation
