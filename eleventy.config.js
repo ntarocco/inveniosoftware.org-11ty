@@ -1,5 +1,6 @@
 import eleventySass from "@11tyrocks/eleventy-plugin-sass-lightningcss";
 import eleventyNavigation from "@11ty/eleventy-navigation";
+import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 
 export default async function (eleventyConfig) {
   // copy all `src/assets` to `_site/static"
@@ -41,6 +42,26 @@ export default async function (eleventyConfig) {
                    "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
     return `${months[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
   });
+
+  // RSS feed
+  eleventyConfig.addPlugin(feedPlugin, {
+		type: "atom", // or "rss", "json"
+		outputPath: "/feed.xml",
+		collection: {
+			name: "posts", // iterate over `collections.posts`
+			limit: 10,     // 0 means no limit
+		},
+		metadata: {
+			language: "en",
+			title: "Invenio Blog",
+			subtitle: "Follow news and updates on Invenio world.",
+			base: "https://inveniosoftware.org/blog/",
+			author: {
+				name: "Invenio Software",
+				email: "info@inveniosoftware.org",
+			}
+		}
+	});
 }
 
 export const config = {
