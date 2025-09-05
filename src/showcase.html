@@ -1,0 +1,221 @@
+---
+title: Showcase
+subtitle: Invenio installations around the world
+eleventyNavigation:
+  key: Showcase
+  order: 3
+---
+{% layout 'layouts/page.html' %}
+
+{% block content %}
+<section class="showcase-section section-content-light-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 centered">
+        <p class="lead">A showcase gallery illustrating Invenio instances worldwide. <a href="/showcase/add/">Add yours!</a></p>
+      </div>
+    </div>
+
+    <!-- InvenioRDM installations -->
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="section-title">InvenioRDM installations</h2>
+        <p class="section-description">Research data repositories built with InvenioRDM for managing and sharing research outputs.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      {% for installation in showcase.rdm %}
+      <div class="col-md-4 col-sm-6 showcase-item">
+        <div class="showcase-card {% if installation.featured %}featured{% endif %}">
+          <div class="showcase-image">
+            <a href="{{ installation.url }}" target="_blank">
+              <img src="/assets/images/showcase/{{ installation.screenshot }}"
+                   alt="{{ installation.name }}"
+                   class="img-responsive">
+            </a>
+          </div>
+          <div class="showcase-content">
+            <h3>
+              <a href="{{ installation.url }}" target="_blank">{{ installation.name }}</a>
+            </h3>
+            <p class="showcase-description">{{ installation.description }}</p>
+            <div class="showcase-meta">
+              {% if installation.institution %}
+                <span class="meta-item">
+                  <i class="fa fa-university"></i> {{ installation.institution }}
+                </span>
+              {% endif %}
+              {% if installation.country %}
+                <span class="meta-item">
+                  <i class="fa fa-globe"></i> {{ installation.country }}
+                </span>
+              {% endif %}
+              {% if installation.launched %}
+                <span class="meta-item">
+                  <i class="fa fa-calendar"></i> {{ installation.launched }}
+                </span>
+              {% endif %}
+            </div>
+            <div class="showcase-labels">
+              <span class="label label-rdm">InvenioRDM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- InvenioILS installations -->
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="section-title">InvenioILS installations</h2>
+        <p class="section-description">Integrated library systems powered by InvenioILS for comprehensive library management.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      {% for installation in showcase.ils %}
+      <div class="col-md-4 col-sm-6 showcase-item">
+        <div class="showcase-card {% if installation.featured %}featured{% endif %}">
+          <div class="showcase-image">
+            <a href="{{ installation.url }}" target="_blank">
+              <img src="/assets/images/showcase/{{ installation.screenshot }}"
+                   alt="{{ installation.name }}"
+                   class="img-responsive">
+            </a>
+          </div>
+          <div class="showcase-content">
+            <h3>
+              <a href="{{ installation.url }}" target="_blank">{{ installation.name }}</a>
+            </h3>
+            <p class="showcase-description">{{ installation.description }}</p>
+            <div class="showcase-meta">
+              {% if installation.institution %}
+                <span class="meta-item">
+                  <i class="fa fa-university"></i> {{ installation.institution }}
+                </span>
+              {% endif %}
+              {% if installation.country %}
+                <span class="meta-item">
+                  <i class="fa fa-globe"></i> {{ installation.country }}
+                </span>
+              {% endif %}
+              {% if installation.launched %}
+                <span class="meta-item">
+                  <i class="fa fa-calendar"></i> {{ installation.launched }}
+                </span>
+              {% endif %}
+            </div>
+            <div class="showcase-labels">
+              <span class="label label-ils">InvenioILS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Invenio v3 Framework installations -->
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="section-title">Invenio v3 Framework installations</h2>
+        <p class="section-description">Applications and repositories built with the Invenio v3 Framework.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      {% for installation in showcase.framework_v3 %}
+      <div class="col-md-4 col-sm-6 showcase-item">
+        <div class="showcase-card {% if installation.featured %}featured{% endif %}">
+          <div class="showcase-image">
+            <a href="{{ installation.url }}" target="_blank">
+              <img src="/assets/images/showcase/{{ installation.screenshot }}"
+                   alt="{{ installation.name }}"
+                   class="img-responsive">
+            </a>
+          </div>
+          <div class="showcase-content">
+            <h3>
+              <a href="{{ installation.url }}" target="_blank">{{ installation.name }}</a>
+            </h3>
+            <p class="showcase-description">{{ installation.description }}</p>
+            <div class="showcase-meta">
+              {% if installation.institution %}
+                <span class="meta-item">
+                  <i class="fa fa-university"></i> {{ installation.institution }}
+                </span>
+              {% endif %}
+              {% if installation.country %}
+                <span class="meta-item">
+                  <i class="fa fa-globe"></i> {{ installation.country }}
+                </span>
+              {% endif %}
+              {% if installation.launched %}
+                <span class="meta-item">
+                  <i class="fa fa-calendar"></i> {{ installation.launched }}
+                </span>
+              {% endif %}
+            </div>
+            <div class="showcase-labels">
+              <span class="label label-framework">Invenio Framework</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Invenio v1 installations -->
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="section-title">Invenio v1 installations</h2>
+        <p class="section-description">Applications and repositories built with the Invenio v1.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      {% for installation in showcase.v1 %}
+      <div class="col-md-4 col-sm-6 showcase-item">
+        <div class="showcase-card {% if installation.featured %}featured{% endif %}">
+          <div class="showcase-image">
+            <a href="{{ installation.url }}" target="_blank">
+              <img src="/assets/images/showcase/{{ installation.screenshot }}"
+                   alt="{{ installation.name }}"
+                   class="img-responsive">
+            </a>
+          </div>
+          <div class="showcase-content">
+            <h3>
+              <a href="{{ installation.url }}" target="_blank">{{ installation.name }}</a>
+            </h3>
+            <p class="showcase-description">{{ installation.description }}</p>
+            <div class="showcase-meta">
+              {% if installation.institution %}
+                <span class="meta-item">
+                  <i class="fa fa-university"></i> {{ installation.institution }}
+                </span>
+              {% endif %}
+              {% if installation.country %}
+                <span class="meta-item">
+                  <i class="fa fa-globe"></i> {{ installation.country }}
+                </span>
+              {% endif %}
+              {% if installation.launched %}
+                <span class="meta-item">
+                  <i class="fa fa-calendar"></i> {{ installation.launched }}
+                </span>
+              {% endif %}
+            </div>
+            <div class="showcase-labels">
+              <span class="label label-framework">Invenio Framework</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
+{% endblock %}

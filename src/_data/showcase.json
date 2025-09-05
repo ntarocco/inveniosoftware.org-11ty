@@ -1,0 +1,251 @@
+{
+  "rdm": [
+    {
+      "name": "Zenodo",
+      "description": "Zenodo is a general-purpose open-access repository developed under the European OpenAIRE program and operated by CERN.",
+      "url": "https://zenodo.org",
+      "country": "CH",
+      "screenshot": "zenodo.png",
+      "featured": true,
+      "institution": "CERN",
+      "launched": "2013"
+    },
+    {
+      "name": "CaltechDATA",
+      "description": "CaltechDATA is an institutional research data repository that shares and preserves the accomplishments of Caltech researchers.",
+      "url": "https://data.caltech.edu",
+      "country": "US",
+      "screenshot": "caltechdata.png",
+      "featured": true,
+      "institution": "California Institute of Technology",
+      "launched": "2019"
+    },
+    {
+      "name": "TU Wien Research Data",
+      "description": "TU Wien Research Data is the institutional research data repository for TU Wien, the technical university of Vienna, Austria.",
+      "url": "https://researchdata.tuwien.ac.at",
+      "country": "AT",
+      "screenshot": "tuw_research_data.png",
+      "institution": "TU Wien",
+      "launched": "2022"
+    },
+    {
+      "name": "TU Graz Repository",
+      "description": "TU Graz Repository is the institutional research data repository for TU Graz, the technical university of Graz, Austria.",
+      "url": "https://repository.tugraz.at",
+      "country": "AT",
+      "screenshot": "tugraz_repository.png",
+      "institution": "TU Graz",
+      "launched": "2021"
+    },
+    {
+      "name": "KTH Data Repository",
+      "description": "The KTH data repository contains information about KTH research data and related research output.",
+      "url": "https://datarepository.kth.se",
+      "country": "SE",
+      "screenshot": "kth-rdm.png",
+      "institution": "KTH Royal Institute of Technology",
+      "launched": "2023"
+    },
+    {
+      "name": "Materials Cloud Archive",
+      "description": "The Materials Cloud Archive is an open and moderated repository for research data relevant to computational materials science.",
+      "url": "https://archive.materialscloud.org",
+      "country": "CH",
+      "screenshot": "materials_cloud_archive.png",
+      "institution": "EPFL",
+      "launched": "2020"
+    },
+    {
+      "name": "Prism",
+      "description": "Prism is an institutional repository for the research and scholarly output of Northwestern University.",
+      "url": "https://prism.northwestern.edu",
+      "country": "US",
+      "screenshot": "nu_prism.png",
+      "institution": "Northwestern University",
+      "launched": "2023"
+    }
+  ],
+  "ils": [
+    {
+      "name": "TIND ILS",
+      "description": "Integrated library system based on Invenio framework, used by multiple institutions worldwide.",
+      "url": "https://tind.io",
+      "country": "NO",
+      "screenshot": "reroils.png",
+      "featured": true,
+      "institution": "TIND Technologies",
+      "launched": "2014"
+    },
+    {
+      "name": "RERO ILS",
+      "description": "Library system for the RERO network of Western Switzerland libraries.",
+      "url": "https://ils.rero.ch",
+      "country": "CH",
+      "screenshot": "reroils.png",
+      "institution": "RERO",
+      "launched": "2018"
+    },
+    {
+      "name": "NTNU Library",
+      "description": "Special collections at the NTNU University library with regional, national and international importance.",
+      "url": "https://ntnu.tind.io",
+      "country": "NO",
+      "screenshot": "ntnu.png",
+      "institution": "NTNU",
+      "launched": "2017"
+    },
+    {
+      "name": "International Telecommunication Union",
+      "description": "The ITU library collections include all ITU publications and documents.",
+      "url": "https://itu.tind.io",
+      "country": "CH",
+      "screenshot": "itu.png",
+      "institution": "ITU",
+      "launched": "2016"
+    },
+    {
+      "name": "United Nations Library Vienna",
+      "description": "The United Nations Office at Vienna library system.",
+      "url": "https://unov.tind.io",
+      "country": "AT",
+      "screenshot": "unov.png",
+      "institution": "UNOV",
+      "launched": "2015"
+    },
+    {
+      "name": "World Food Programme",
+      "description": "The World Food Programme library system for the world's largest humanitarian agency.",
+      "url": "https://wfp.tind.io",
+      "country": "IT",
+      "screenshot": "wfp.png",
+      "institution": "WFP",
+      "launched": "2017"
+    }
+  ],
+  "framework_v3": [
+    {
+      "name": "INSPIRE-HEP",
+      "description": "High-Energy Physics information system, serving the particle physics community since 1974.",
+      "url": "https://inspirehep.net",
+      "country": "CH",
+      "screenshot": "inspire.png",
+      "featured": true,
+      "institution": "CERN, DESY, Fermilab, SLAC",
+      "launched": "2017"
+    },
+    {
+      "name": "CERN Open Data",
+      "description": "Discover open Research datasets and software of LHC experiments. Visualise events and run and your own analysis.",
+      "url": "https://opendata.cern.ch/",
+      "country": "CH",
+      "screenshot": "cod.png",
+      "featured": true,
+      "institution": "CERN",
+      "launched": "2014"
+    },
+    {
+      "name": "CaltechAUTHORS",
+      "description": "CaltechAUTHORS contains research publications by Caltech faculty and other Caltech researchers.",
+      "url": "https://authors.library.caltech.edu",
+      "country": "US",
+      "screenshot": "caltechauthors.png",
+      "institution": "California Institute of Technology",
+      "launched": "2014"
+    },
+    {
+      "name": "B2SHARE",
+      "description": "Reliable and trustworthy way for researchers to store and share small-scale research data.",
+      "url": "https://b2share.eudat.eu/",
+      "country": "FI",
+      "screenshot": "b2share.png",
+      "institution": "EUDAT",
+      "launched": "2015"
+    },
+    {
+      "name": "HEPData",
+      "description": "The Durham High Energy Physics Database (HEPData) has been built up over the past four decades as a unique open-access repository for scattering data from experimental particle physics.",
+      "url": "https://hepdata.net",
+      "country": "UK",
+      "screenshot": "hepdata.png",
+      "featured": true,
+      "institution": "Durham University",
+      "launched": "2016"
+    },
+    {
+      "name": "Aristotle University Digital Library",
+      "description": "Digital library holding rare books, archival material, grey literature and institutional publications.",
+      "url": "http://digital.lib.auth.gr",
+      "country": "GR",
+      "screenshot": "auth.png",
+      "institution": "Aristotle University of Thessaloniki",
+      "launched": "2003"
+    },
+    {
+      "name": "EPFL Infoscience",
+      "description": "The scientific information portal of the École Polytechnique Fédérale de Lausanne (EPFL).",
+      "url": "https://infoscience.epfl.ch",
+      "country": "CH",
+      "screenshot": "epfl.png",
+      "institution": "EPFL",
+      "launched": "2015"
+    }
+  ],
+  "v1": [
+    {
+      "name": "CERN Document Server",
+      "description": "CERN official repository for publications, articles, reports and multimedia content in HEP.",
+      "url": "https://cds.cern.ch",
+      "country": "CH",
+      "screenshot": "cds.png",
+      "featured": true,
+      "institution": "CERN",
+      "launched": "2017"
+    },
+    {
+      "name": "DESY PUBDB",
+      "description": "The DESY Publication database (pubdb) contains references for scientific publications as well as open access to many of the corresponding full texts.",
+      "url": "https://pubdb.desy.de",
+      "country": "DE",
+      "screenshot": "desy.png",
+      "institution": "DESY",
+      "launched": "2005"
+    },
+    {
+      "name": "GSI Institutional Repository",
+      "description": "The GSI Institutional Repository is the portal to the references of the scientific publications and to the open access full texts of the GSI scientists.",
+      "url": "https://repository.gsi.de",
+      "country": "DE",
+      "screenshot": "gsi.png",
+      "institution": "GSI",
+      "launched": "2006"
+    },
+    {
+      "name": "JuSER",
+      "description": "Jülich Shared Electronic Resources (JuSER) lists scientific publications by employees of Forschungszentrum Jülich.",
+      "url": "https://juser.fz-juelich.de",
+      "country": "DE",
+      "screenshot": "julich.png",
+      "institution": "Forschungszentrum Jülich",
+      "launched": "2007"
+    },
+    {
+      "name": "RWTH Publications",
+      "description": "RWTH Publications is a central database that documents RWTH Aachen University's scientific performance.",
+      "url": "https://publications.rwth-aachen.de",
+      "country": "DE",
+      "screenshot": "rwth.png",
+      "institution": "RWTH Aachen University",
+      "launched": "2008"
+    },
+    {
+      "name": "RERO DOC",
+      "description": "Digital library of RERO, the library Network of Western Switzerland. Created to promote, preserve and provide public access to the grey literature.",
+      "url": "https://doc.rero.ch",
+      "country": "CH",
+      "screenshot": "rero.png",
+      "institution": "RERO",
+      "launched": "2009"
+    }
+  ]
+}
