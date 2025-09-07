@@ -14,26 +14,34 @@
           <img src="/assets/images/logo-invenio-white.svg" alt="Invenio logo" title="Invenio logo" class="icon-contact" />
         </a>
       </div>
+
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="inv-navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
           {%- for entry in navPages %}
-          {% if entry.children.size > 0 %}
-          <li class="dropdown-submenu">
-            <a href="#" class="dropdown-toggle{% if entry.url == page.url or entry.key == eleventyNavigation.parent %} active-menu{% endif %}" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-              <span class="nav-label">{{ entry.title }}</span>
-              <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-              {% for child in entry.children %}
-                <li><a href="{{ child.url }}">{{ child.title }}</a></li>
-              {% endfor %}
-            </ul>
-          </li>
-          {% else %}
-          {% assign isBlogPost = entry.key == "Blog" and page.url startswith "/blog/" %}
-          <li><a{% if entry.url == page.url or entry.key == eleventyNavigation.parent or isBlogPost %} class="active-menu"{% endif %} href="{{ entry.url }}">{{ entry.title }}</a></li>
-          {% endif %}
+
+            {% assign startsWithBlog = page.url | startswith: "/blog/" %}
+            {% assign isBlogPost = entry.key == "Blog" and startsWithBlog %}
+
+            {% assign startsWithShowcase = page.url | startswith: "/showcase" %}
+            {% assign isShowcase = entry.key == "Showcase" and startsWithShowcase %}
+            
+            {% assign isActive = entry.url == page.url or entry.key == eleventyNavigation.parent or isBlogPost or isShowcase %}
+            {% if entry.children.size > 0 %}
+              <li class="dropdown-submenu">
+                <a href="#" class="dropdown-toggle{% if isActive %} active-menu{% endif %}" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <span class="nav-label">{{ entry.title }}</span>
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  {% for child in entry.children %}
+                    <li><a href="{{ child.url }}">{{ child.title }}</a></li>
+                  {% endfor %}
+                </ul>
+              </li>
+            {% else %}
+              <li><a{% if isActive %} class="active-menu"{% endif %} href="{{ entry.url }}">{{ entry.title }}</a></li>
+            {% endif %}
           {%- endfor %}
         </ul>
       </div>

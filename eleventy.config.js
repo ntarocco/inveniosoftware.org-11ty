@@ -43,6 +43,33 @@ export default async function (eleventyConfig) {
     return `${months[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
   });
 
+  // Sort showcase items: featured first, then alphabetical, remove duplicates
+  eleventyConfig.addFilter("sortShowcaseItems", (items) => {
+    if (!Array.isArray(items)) return items;
+    
+    // Remove duplicates based on name and URL combination
+    // const uniqueItems = items.filter((item, index, self) => 
+    //   index === self.findIndex(t => t.name === item.name && t.url === item.url)
+    // );
+    
+    // Sort: featured items first, then alphabetical by name
+    const sorted = items.sort((a, b) => {
+      // Featured items come first
+      if (a.featured && !b.featured) return -1;
+      if (!a.featured && b.featured) return 1;
+      
+      // Within same featured status, sort alphabetically by name
+      return a.name.localeCompare(b.name);
+    });
+    
+    return sorted;
+  });
+
+  eleventyConfig.addFilter('startswith', (input, prefix) => {
+    if (typeof input !== 'string' || typeof prefix !== 'string') return false;
+    return input.startsWith(prefix);
+  });
+
   // RSS feed
   eleventyConfig.addPlugin(feedPlugin, {
 		type: "atom", // or "rss", "json"

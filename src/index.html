@@ -17,7 +17,19 @@ eleventyNavigation:
     <div class="row">
       <div class="col-md-12 col-xs-12 block-center">
         <div class="hp-blog-post-list">
-          <h1>BLOG POSTS!!!!!!a</h1>
+          {% assign recent_posts = collections.posts | reverse %}
+          {% for post in recent_posts limit:3 %}
+            <div class="hp-blog-list-item col-xs-12 col-md-4">
+              {% assign title = post.data.title %}
+              {% assign author = post.data.author %}
+              {% assign date = post.data.date %}
+              {% assign team_colour = post.data.team_colour %}
+              {% assign team_url = post.data.team_url %}
+              {% assign team = post.data.team %}
+              {% assign permalink = post.data.permalink %}
+              {% include "partials/blog-post-homepage.html" %}
+            </div>
+          {% endfor %}
         </div>
       </div>
     </div>
