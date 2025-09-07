@@ -98,6 +98,22 @@ Main configuration is in `eleventy.config.js`:
 
 ## Deployment
 
+### GitHub Pages (Automatic)
+
+The site is automatically deployed to GitHub Pages using GitHub Actions:
+
+- **Trigger**: Pushes to `main` branch
+- **Workflow**: `.github/workflows/deploy.yml`
+- **Build**: Runs `npm run build` and deploys `_site/` directory
+- **URL**: Available at `https://[username].github.io/[repository-name]`
+
+To enable GitHub Pages:
+1. Go to repository Settings → Pages
+2. Select "GitHub Actions" as the source
+3. The workflow will automatically deploy on the next push to `main`
+
+### Manual Deployment
+
 The site generates static HTML files that can be deployed to any web server or static hosting service:
 
 - **Build**: `npm run build`
