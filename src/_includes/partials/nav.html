@@ -35,12 +35,12 @@
                 </a>
                 <ul class="dropdown-menu">
                   {% for child in entry.children %}
-                    <li><a href="{{ child.url | url }}">{{ child.title }}</a></li>
+                    <li><a href="{{ child.url }}">{{ child.title }}</a></li>
                   {% endfor %}
                 </ul>
               </li>
             {% else %}
-              <li><a{% if isActive %} class="active-menu"{% endif %} href="{{ entry.url | url }}">{{ entry.title }}</a></li>
+              <li><a{% if isActive %} class="active-menu"{% endif %} href="{{ entry.url }}">{{ entry.title }}</a></li>
             {% endif %}
           {%- endfor %}
         </ul>
