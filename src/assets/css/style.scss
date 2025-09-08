@@ -1405,13 +1405,15 @@ h2 {
 }
 
 .label-rdm {
-  background-color: #28a745;
-  color: white;
+  /* Match RDM product page orange */
+  background-color: #fb8273;
+  color: #ffffff;
 }
 
 .label-ils {
-  background-color: #007bff;
-  color: white;
+  /* Match ILS product page light blue */
+  background-color: #7be9ff;
+  color: #0b3a4b; /* dark text for contrast on light background */
 }
 
 .label-framework {
@@ -1420,13 +1422,15 @@ h2 {
 }
 
 .label-v3 {
-  background-color: #17a2b8;
-  color: white;
+  /* Match Framework v3 product page green */
+  background-color: #21e249;
+  color: #ffffff;
 }
 
 .label-v1 {
-  background-color: #6f42c1;
-  color: white;
+  /* Legacy v1 dark grey */
+  background-color: #495057;
+  color: #ffffff;
 }
 
 .showcase-section-content .section-title {
