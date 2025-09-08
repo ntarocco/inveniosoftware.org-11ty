@@ -5,18 +5,13 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: true
-
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -24,22 +19,25 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
+
+      - name: Persist npm cache
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package.json') }}
+  
+      - name: Persist Eleventy .cache
+        uses: actions/cache@v3
+        with:
+          path: ./.cache
+          key: ${{ runner.os }}-eleventy-fetch-cache
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Compute PATH_PREFIX
-        run: |
-          # For user/org pages (repo name ends with .github.io) prefix is "/"; otherwise "/<repo>/"
-          if [[ "${{ github.event.repository.name }}" =~ \.github\.io$ ]]; then
-            echo "PATH_PREFIX=/" >> $GITHUB_ENV
-          else
-            echo "PATH_PREFIX=/${{ github.event.repository.name }}/" >> $GITHUB_ENV
-          fi
-
       - name: Build site
-        run: npm run build
+        run: npm run build-ghpages
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

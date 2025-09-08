@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "npx @11ty/eleventy && node github-project-screenshot.js",
+    "build-ghpages": "npx @11ty/eleventy --pathprefix=/inveniosoftware.org-11ty/ && node github-project-screenshot.js",
     "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve",
     "start": "npx @11ty/eleventy --serve",
     "test": "echo \"Error: no test specified\" && exit 1"

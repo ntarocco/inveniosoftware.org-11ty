@@ -87,7 +87,10 @@ export default async function (eleventyConfig) {
 				name: "Invenio Software",
 				email: "info@inveniosoftware.org",
 			}
-		}
+		},
+    htmlBasePluginOptions: {
+      baseHref: "",
+    }
 	});
 }
 
@@ -96,8 +99,6 @@ export const config = {
   markdownTemplateEngine: "liquid",
   dataTemplateEngine: "liquid",
   htmlTemplateEngine: "liquid",
-  // Use env to allow GitHub Actions to inject a subdirectory (e.g. /inveniosoftware.org-11ty/)
-  pathPrefix: process.env.PATH_PREFIX || "/",
   dir: {
     input: "src",
     includes: "_includes",
