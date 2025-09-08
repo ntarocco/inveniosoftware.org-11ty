@@ -1057,6 +1057,23 @@ i.large-icon {
   .bio {
     font-size: 0.8em;
   }
+
+  .social-links {
+    margin-top: 8px;
+
+    a {
+      display: inline-block;
+      margin: 0 6px;
+      color: #0377cd;
+      font-size: 20px;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: #024a7f;
+      }
+    }
+  }
 }
 .more-people {
   padding-top: 80px;

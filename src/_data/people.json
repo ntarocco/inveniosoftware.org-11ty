@@ -8,7 +8,8 @@
       "bio": "",
       "status": "current",
       "invenio-role": "maintainer",
-      "github": ""
+      "github": "",
+      "linkedin": ""
     },
     {
       "name": "Guillaume Viger",
@@ -18,7 +19,8 @@
       "bio": "",
       "status": "current",
       "invenio-role": "maintainer",
-      "github": ""
+      "github": "",
+      "linkedin": ""
     },
     {
       "name": "Matthew Carson",
@@ -28,7 +30,8 @@
       "bio": "",
       "status": "current",
       "invenio-role": "",
-      "github": ""
+      "github": "",
+      "linkedin": ""
     },
     {
       "name": "Lars Holm Nielsen",
@@ -38,7 +41,8 @@
       "bio": "Creator of Zenodo.org",
       "status": "current",
       "invenio-role": "",
-      "github": "https://github.com/lnielsen"
+      "github": "https://github.com/lnielsen",
+      "linkedin": ""
     },
     {
       "name": "Peter Cornwell",
@@ -48,7 +52,8 @@
       "bio": "",
       "status": "current",
       "invenio-role": "",
-      "github": ""
+      "github": "",
+      "linkedin": ""
     },
     {
       "name": "Sara Gonzales",
@@ -58,7 +63,8 @@
       "bio": "",
       "status": "current",
       "invenio-role": "",
-      "github": ""
+      "github": "",
+      "linkedin": ""
     },
     {
       "name": "Werner Greßhoff",
@@ -68,7 +74,8 @@
       "bio": "",
       "status": "current",
       "invenio-role": "",
-      "github": ""
+      "github": "",
+      "linkedin": ""
     },
     {
       "name": "Dan Granville",
@@ -78,7 +85,8 @@
       "bio": "",
       "status": "current",
       "invenio-role": "",
-      "github": ""
+      "github": "",
+      "linkedin": ""
     },
     {
       "name": "Zaharias Zaharodimos",
@@ -88,7 +96,8 @@
       "bio": "",
       "status": "current",
       "invenio-role": "maintainer",
-      "github": "https://github.com/zzacharo"
+      "github": "https://github.com/zzacharo",
+      "linkedin": ""
     },
     {
       "name": "Kristi Holmes",
@@ -98,7 +107,8 @@
       "bio": "",
       "status": "current",
       "invenio-role": "",
-      "github": ""
+      "github": "",
+      "linkedin": ""
     },
     {
       "name": "Karolina Przerwa",
@@ -108,7 +118,8 @@
       "bio": "",
       "status": "current",
       "invenio-role": "maintainer",
-      "github": "https://github.com/kpsherva"
+      "github": "https://github.com/kpsherva",
+      "linkedin": ""
     },
     {
       "name": "Nicola Tarocco",
@@ -118,7 +129,8 @@
       "bio": "CERN Institutional Repository Service Manager",
       "status": "current",
       "invenio-role": "maintainer",
-      "github": "https://github.com/ntarocco"
+      "github": "https://github.com/ntarocco",
+      "linkedin": "https://www.linkedin.com/in/ntarocco/"
     },
     {
       "name": "Alexandros Ioannidis",
@@ -128,7 +140,8 @@
       "bio": "Invenio Principal Architect and Zenodo Service Manager",
       "status": "current",
       "invenio-role": "maintainer",
-      "github": "https://github.com/slint"
+      "github": "https://github.com/slint",
+      "linkedin": ""
     },
     {
       "name": "Kai Wörner",
@@ -138,7 +151,8 @@
       "bio": "",
       "status": "current",
       "invenio-role": "",
-      "github": ""
+      "github": "",
+      "linkedin": ""
     },
     {
       "name": "Jose Benito Gonzalez Lopez",
@@ -148,7 +162,8 @@
       "bio": "Leads Digital Repository projects",
       "status": "current",
       "invenio-role": "",
-      "github": ""
+      "github": "",
+      "linkedin": ""
     },
     {
       "name": "Pablo Panero",
@@ -158,7 +173,8 @@
       "bio": "",
       "status": "former",
       "invenio-role": "",
-      "github": "https://github.com/ppanero"
+      "github": "https://github.com/ppanero",
+      "linkedin": ""
     },
     {
       "name": "Tom Morrell",
@@ -168,7 +184,8 @@
       "bio": "Research Data Specialist",
       "status": "current",
       "invenio-role": "maintainer",
-      "github": "https://github.com/tmorrell"
+      "github": "https://github.com/tmorrell",
+      "linkedin": ""
     },
     {
       "name": "Tibor Simko",
@@ -178,7 +195,8 @@
       "bio": "Leads CERN Open Data and REANA",
       "status": "former",
       "invenio-role": "",
-      "github": ""
+      "github": "",
+      "linkedin": ""
     },
     {
       "name": "Rodrigo Lopes de Almeida",
@@ -188,7 +206,8 @@
       "bio": "",
       "status": "former",
       "invenio-role": "",
-      "github": ""
+      "github": "",
+      "linkedin": ""
     },
     {
       "name": "Hakan Bayındır",
@@ -198,7 +217,8 @@
       "bio": "",
       "status": "current",
       "invenio-role": "",
-      "github": ""
+      "github": "",
+      "linkedin": ""
     },
     {
       "name": "Martin Fenner",
@@ -208,7 +228,8 @@
       "bio": "",
       "status": "current",
       "invenio-role": "",
-      "github": ""
+      "github": "",
+      "linkedin": ""
     },
     {
       "name": "Javier Romero Castro",
@@ -218,7 +239,8 @@
       "bio": "",
       "status": "current",
       "invenio-role": "",
-      "github": "https://github.com/jrcastro2"
+      "github": "https://github.com/jrcastro2",
+      "linkedin": ""
     },
     {
       "name": "Saksham Arora",
@@ -228,7 +250,8 @@
       "bio": "",
       "status": "current",
       "invenio-role": "",
-      "github": "https://github.com/sakshamarora1"
+      "github": "https://github.com/sakshamarora1",
+      "linkedin": ""
     },
     {
       "name": "Anika Churilova",
@@ -238,7 +261,8 @@
       "bio": "",
       "status": "former",
       "invenio-role": "",
-      "github": ""
+      "github": "",
+      "linkedin": ""
     },
     {
       "name": "Pablo Tamarit",
@@ -248,7 +272,8 @@
       "bio": "",
       "status": "current",
       "invenio-role": "",
-      "github": "https://github.com/ptamarit"
+      "github": "https://github.com/ptamarit",
+      "linkedin": ""
     },
     {
       "name": "Carlin Kenneth Mackenzie",
@@ -258,7 +283,8 @@
       "bio": "",
       "status": "current",
       "invenio-role": "",
-      "github": ""
+      "github": "",
+      "linkedin": ""
     },
     {
       "name": "Fatimah Zulfiqar",
@@ -268,7 +294,8 @@
       "bio": "",
       "status": "current",
       "invenio-role": "",
-      "github": ""
+      "github": "",
+      "linkedin": ""
     },
     {
       "name": "Yash Lamba",
@@ -278,7 +305,8 @@
       "bio": "",
       "status": "current",
       "invenio-role": "",
-      "github": ""
+      "github": "",
+      "linkedin": ""
     },
     {
       "name": "Christoph Ladurner",
@@ -288,7 +316,8 @@
       "bio": "",
       "status": "current",
       "invenio-role": "maintainer",
-      "github": "https://github.com/utnapischtim"
+      "github": "https://github.com/utnapischtim",
+      "linkedin": ""
     },
     {
       "name": "Sam",
@@ -298,7 +327,8 @@
       "bio": "",
       "status": "current",
       "invenio-role": "maintainer",
-      "github": ""
+      "github": "",
+      "linkedin": ""
     },
     {
       "name": "Max",
@@ -308,7 +338,8 @@
       "bio": "",
       "status": "current",
       "invenio-role": "maintainer",
-      "github": ""
+      "github": "",
+      "linkedin": ""
     }
   ]
 }
