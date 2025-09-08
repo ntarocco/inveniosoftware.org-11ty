@@ -10,8 +10,8 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a href="/" class="navbar-brand">
-          <img src="/assets/images/logo-invenio-white.svg" alt="Invenio logo" title="Invenio logo" class="icon-contact" />
+        <a href="{{ "/" | url }}" class="navbar-brand">
+          <img src="{{ "/assets/images/logo-invenio-white.svg" | url }}" alt="Invenio logo" title="Invenio logo" class="icon-contact" />
         </a>
       </div>
 
@@ -35,12 +35,12 @@
                 </a>
                 <ul class="dropdown-menu">
                   {% for child in entry.children %}
-                    <li><a href="{{ child.url }}">{{ child.title }}</a></li>
+                    <li><a href="{{ child.url | url }}">{{ child.title }}</a></li>
                   {% endfor %}
                 </ul>
               </li>
             {% else %}
-              <li><a{% if isActive %} class="active-menu"{% endif %} href="{{ entry.url }}">{{ entry.title }}</a></li>
+              <li><a{% if isActive %} class="active-menu"{% endif %} href="{{ entry.url | url }}">{{ entry.title }}</a></li>
             {% endif %}
           {%- endfor %}
         </ul>
