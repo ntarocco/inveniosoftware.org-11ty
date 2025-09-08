@@ -82,7 +82,7 @@ export default async function (eleventyConfig) {
 			language: "en",
 			title: "Invenio Blog",
 			subtitle: "Follow news and updates on Invenio world.",
-			base: "https://inveniosoftware.org/blog/",
+			base: "https://ntarocco.github.io/inveniosoftware.org-11ty/blog/",
 			author: {
 				name: "Invenio Software",
 				email: "info@inveniosoftware.org",
