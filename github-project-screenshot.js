@@ -1,6 +1,16 @@
 import puppeteer from "puppeteer";
 import path from "path";
 
+// Check if the CI environment variable is set to "true"
+const isCI = process.env.CI === "true";
+
+const puppeteerOptions = {
+  headless: "new",
+  // If we are in a CI environment, add the --no-sandbox argument
+  // to avoid the `No usable sandbox!` error for Ubuntu > 22
+  args: isCI ? ["--no-sandbox", "--disable-setuid-sandbox"] : [],
+};
+
 const config = {
   screenshotDir: "_site/assets/images", // Where to save screenshots
   pagesToScreenshot: [
@@ -18,7 +28,7 @@ async function takeScreenshot(name, url, outputPath, viewport, delay) {
   console.log(`About to take a screenshot of ${name} at ${url}`);
   let browser;
   try {
-    browser = await puppeteer.launch({ headless: "new" }); // 'new' for new headless mode
+    browser = await puppeteer.launch(puppeteerOptions);
     const page = await browser.newPage();
     await page.emulateMediaFeatures([{ name: "prefers-color-scheme", value: "light" }]);
     await page.setViewport(viewport);
